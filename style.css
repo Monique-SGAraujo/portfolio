@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 244, 37);
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: rgb(240, 191, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 99;
+}
+header .logo{
+    width: 50%;
+    
+}
+header .logo img{
+    width: 90px;
+}
+header .menu ul{
+    display: flex;
+}
+header .menu ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+header .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    transition: 0.5s ease;
+    font-size: 25px;
+}
+header .menu ul li a:hover{
+    color: #ffe100;
+}
+header .menu-movel{
+    display: none;
+}
+
+#Inicio .container{
+    width: 100%;
+    height: 100vh;
+    background: url(imagens/AA.jpg);
+    background-size: cover;
+}
+#Inicio .container .icones{
+    width: 10%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    position: fixed;
+    z-index: 999;
+}
+#Inicio .container .icones ion-icon{
+    padding: 30px 0 ;
+    font-size: 2rem;
+    color: black;
+    transition: 0.5s ease;
+}
+#Inicio .container .icones ion-icon:hover{
+    color: #ffe100;
+}
+#Inicio .container .titulo{
+    width: 100%;
+    height: 0vh;
+    justify-content: center;
+    padding: 150px 200px;
+    display: inline-block;
+    
+    
+}
+#Inicio .container .titulo h1{
+    color: black;
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    display: block;
+    float: right;
+    margin: 10px;
+    margin-right: 0px;
+   
+   
+}
+#Inicio .container .titulo h2{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 1.2rem;
+    display: block;
+    float: right;
+    margin: 10px;
+    margin-right: 0px;
+    margin-top: -100px;
+    
+   
+    
+}
+#Inicio .container .titulo img{
+    width: 250px;
+    height:250px;
+    border-radius: 80px;
+    
+}
+
+
+#sobre .container{
+    width: 100%;
+    height: 100vh;
+    background: url(imagens/MEIO.jpg);
+    background-size:cover;
+    display:flex;
+    justify-content:space-between;
+}
+#sobre .container .titulo{
+    width: 90%;
+    height: 60vh;
+    margin: 60px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    font-size: 1.2rem;
+    color: #000000;
+
+}
+#sobre .container .titulo h1{
+    color: #0a0000;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: left;
+}
+#sobre .container .titulo p{
+    color: #000000;
+    width: 500px;
+    margin-top: 17px;
+}
+
+
+    
+
+#sobre .container .box-titulo{
+    width: 445px;
+    height: 40vh;
+    margin: 150px 90px;
+    padding: 40px 40px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    border-radius: 10px;
+    
+   
+}
+#sobre .container .box-titulo h2{
+    margin-top: 5px;
+
+}
+#sobre .container .box-titulo p{
+    margin-top: 10px;
+}
+
+#sobre .container .box-titulo span{
+    color: #000000;
+    margin-top: 10px;
+   
+}
+#sobre .container .box-titulo .b1{
+    width: 400px;
+    height: 8px;
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+#sobre .container .box-titulo .b2{
+    width: 350px;
+    height: 8px;
+    background: #000000;
+    border-radius: 5px;
+    margin-top: 10px;
+   
+}
+#sobre .container .box-titulo .b3{
+    width: 300px;
+    height: 8px;
+    background: #000000;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+#sobre .container .box-titulo .b4{
+    width: 300px;
+    height: 8px;
+    background: #000000;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+
+
+
+
+#Portfolio .container{
+    width: 100%;
+    height: 100vh;
+    background: url(imagens/MEIO.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px 0 white;
+    transition: 0.4s ease;
+}
+#Portfolio .container input[type=radio]{
+    display: none;
+}
+#Portfolio .container .card{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: 100px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(21,111,195,0.5);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#Portfolio .container .card img{
+    width: 100%;
+    height: 50%;
+    object-fit: initial;
+    border-radius: 10px;
+    margin-top: 140px;
+}
+#Portfolio .container .card h1{
+  position: absolute;
+    z-index: 9;
+    color: #000000;
+    font-size: 2rem;
+    margin-top: 60px;
+}
+
+#Portfolio .container .card button{
+    position: absolute;
+    z-index: 9;
+    margin-top: 415px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    color: #000000;
+    background: rgb(254, 220, 2);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#Portfolio .container .cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+
+#contato .container{
+    width: 100%;
+    height: 100vh;
+    background: url(imagens/FF.avif);
+    background-size: cover;
+}
+#contato .container .content-contato{
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 200px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#contato .content-contato .contato-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    
+}
+#contato .content-contato .contato-left h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contato .content-contato .linha{
+    width: 350px;
+    height: 3px;
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contato .content-contato ion-icons{
+    font-size: 2rem;
+    padding: 20px 0;
+}
+#contato .content-contato .contato-left span{
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+#contato .content-contato .contato-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+#contato .content-contato .contato-right h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contato .content-contato .contato-right input[type=email]
+#contato .content-contato .contato-right input[type=text]{
+    border-radius: 40px;
+    border: none;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    
+}
+#contato .content-contato .contato-right input[type=textarea]{
+    width: 100%;
+    height: 120px;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    padding: 20px 20px;
+}
+#contato .content-contato .contato-right button{
+    position: absolute;
+    z-index: 9;
+    margin-top: 150px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    color: #000000;
+    background: rgb(254, 220, 2);
+    text-transform: uppercase;
+    cursor: pointer;   
+}
+
+footer{
+    background: #000000;
+    color: #ffe100;
+    text-align: center;
+    
+}
+
+/*===responsivo===*/
+
+@media screen and (max-width: 768px){
+    #Inicio .container .icones ion-icon{
+        font-size: 1.5rem;
+    }
+    #Portifolio .container .card h1{
+        font-size: 5rem;
+         
+      }
+      #Portifolio .container .card p{
+          width: 280px;
+        font-size: 0.8rem;
+    }
+      }
+@media screen and (max-width: 960px){
+    body{
+        background:url(imagens/MEIO.jpg)
+    }
+    header{
+        background: none;
+    }
+    header .logo{
+        width: 600px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .btn-movel{
+        display: block;
+    }
+    header .btn-movel ion-icon{
+        color: rgba(0, 0, 0, 0);
+        font-size: 1.5rem;
+    }
+    header .menu-movel{
+        display: none;
+        width: 50%;
+        height: 20vh;
+        box-shadow: 0 0 15px 0 rgb(0, 19, 112);
+        position: fixed;
+        top: 20px;
+        border-radius: 10px;
+        background: blueviolet
+    }
+    header .menu-movel ul{
+        text-align: center;
+    }
+    header .menu-movel ul li{
+        list-style: none;
+        padding: 12px 0;
+    }
+    header .menu-movel ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+    #Inicio .container .icones{
+        padding: 0 20px;
+    }
+    #Inicio .container .titulo{
+        align-items: center;
+    }
+    #Inicio .container .titulo h1{
+        font-size: 5rem;
+    }
+    #Inicio .container .titulo h2{
+        font-size: 1.2rem;
+    }
+    #Inicio .container .titulo img{
+        width: 250px;
+
+    }
+    #sobre .container .box-titulo{
+        width: 100%;
+        height: 40vh;
+    }
+    #sobre .container .box-titulo .b1{
+        width: 100%;
+    }
+    #sobre .container .box-titulo .b2{
+        width: 90%;
+    }
+    #sobre .container .box-titulo .b3{
+        width: 80%;
+    }
+    #sobre .container .box-titulo .b4{
+        width: 87%;
+    }
+    #contato .content-contato .contato-left{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+    }
+    #contato .content-contato .contato-left h1{
+        font-size: 1.5rem;
+    }
+    #contato .content-contato .contato-left ion-icon{
+        font-size: 1.5rem;
+        padding: 5px 0;
+    }
+    #contato .content-contato .contato-left span{
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+    #contato .content-contato .contato-right h1{
+        font-size: 1.5rem;
+        margin-top: 80px;
+    }
+    #contato .content-contato .contato-right input[type=email]
+    #contato .content-contato .contato-right input[type=text]{
+        padding: 10px 15px;
+        font-size: 1rem;
+}
+#contato .content-contato .contato-right input[type=textarea]{
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+@media screen and (max-width: 750px) {
+    header{
+        padding: 10px;
+    }
+    #Inicio .container .titulo h2{
+        letter-spacing: 30px;
+    }
+    #Inicio .container .titulo h3{
+        letter-spacing: 10px;
+    }
+    #sobre .container .titulo{
+        padding: 10px 60px;
+    }
+    #sobre .container .titulo p{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #portfolio .container .card{
+        width: 60%;
+        height: 60%;
+    }
+    
+}
+
+
+
+
+
+
+   
+
+}
+    

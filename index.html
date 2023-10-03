@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo2.png" alt="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li> <a href="#Inicio"> INICIO </a></li>
+                <li> <a href="#sobre"> SOBRE </a></li>
+                <li> <a href="#Portfolio"> PORTFOLIO </a></li>
+                <li> <a href="https://monique-sgaraujo.github.io/curriculum/">Curriculo </a></li>
+                <li> <a href="#contato"> CONTATO </a></li>
+            </ul>
+        </div>
+        <div class="menu-movel">
+            <ul>
+                <li> <a href="#Inicio"> INICIO </a></li>
+                <li> <a href="#sobre"> SOBRE </a></li>
+                <li> <a href="#Portfolio"> PORTFOLIO </a></li>
+                <li> <a href="https://monique-sgaraujo.github.io/curriculum/">Curriculo </a></li>
+                <li> <a href="#contato"> CONTATO </a></li>
+            </ul>
+        </div>
+        <div class="btn-movel">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main id="Inicio">
+        <div class="container">
+            <div class="icones">
+                <a href="https://github.com/Monique-SGAraujo?tab=repositories"> <ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/monique-siqueira-gomes-araujo-baa680283"> <ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="titulo">
+                <img src="imagens/Monique.jpg" alt="Foto eu">
+                <h1> DEV FRONT-END</h1>
+                <h2> by MONIQUE SIQUEIRA</h2>
+            
+        
+              
+            </div>
+        </div>
+
+
+    </main>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="titulo">
+                <h1>SOBRE MIM</h1>
+              <p>Iniciante na área de tecnologia em 2023, interesse atraves do curso #ELASNATECH da JA Brasil, onde obtive meu primeiro contato com códigos. Estou estudando por diversos meios para desenvolver habilidades e assim adentrar o mercado de trabalho. Tenho 29 anos, apaixonada por conhecer coisas novas e por desafios que elevam o conhecimento. Sou formada em Tecnica de enferamgem, pretendo migrar de profissão e sou mãe de uma princesa de 2 anos.</p>
+            </div>
+                <div class="box-titulo">
+                    <h2>SKILS EM DESENVOLVIMENTO</h2>
+                    <p>90%</p>
+                    <div class="b1"><div class="b2"></div></div>
+                    <span>HTML</span>
+
+                    <p>80%</p>
+                    <div class="b1"><div class="b3"></div></div>
+                    <span>CSS</span>
+
+                    <p>50%</p>
+                    <div class="b1"><div class="b4"></div></div>
+                    <span>JAVASCRIPT</span>
+                </div>
+           
+        </div>
+    </section>
+    
+    <section id="Portfolio">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="imagens/PROJETO ODS.png" alt="" >
+                    <h1>ATIVIDADE ODS</h1>
+                   <button><a href="https://monique-sgaraujo.github.io/ODS/">VEJA</a></button>
+                </label>
+
+                <label class="card" for="item-2" id="song-2">
+                    <img src="imagens/cardapio.png" alt="">
+                    <h1>ATIVIDADE CARDAPIO</h1>
+                  <button><a href="https://monique-sgaraujo.github.io/cardapio/">VEJA</a></button>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="content-contato">
+                <div class="contato-left">
+                    <h1>MEUS CONTATOS</h1>
+                    <div class="linha"></div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>monique.gomes94@gmail.com</span>
+                    <ion-icon name="call"></ion-icon>
+                    <span> (11) 98467-2991 </span>
+                    <ion-icon name="location"></ion-icon>
+                    <span>São Paulo,SP</span>
+                </div>
+
+                    <div class="contato-right">
+                     <h1> Entre em contato</h1>
+                     <div class="linha"></div>
+                     <input type="email" placeholder="E-mail">
+                     <input type="text" placeholder="Nome">
+                     <textarea placeholder="mensagem"></textarea>
+                     <button>ENVIAR</button>
+               
+            </div>
+        </div>
+    </section>
+        <footer id="creditos">
+        
+             
+             <h4>Projeto desenvolvido durante o curso Elas na Tech 2023</h4>
+             <p><b>Professora:</b> Juliana Ribeiro</p>
+             <P><b>Autor:</b> Monique Siqueira Gomes Araujo, iniciante na aréa de desenvolvimento web.</P>
+             <br>
+            </div>
+          <div class="creditos">
+            <h3>Créditos</h3>
+            <p>Imagens: freepink | icones: ions-icon |</p>
+          </div>
+          </footer>
+    </footer>
+        <script type ="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+        <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+         <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-movel").click(function(){
+                $(".menu-movel").slideToggle("slow")
+            })
+        })
+          </script>
+   
+</body>
+</html>
